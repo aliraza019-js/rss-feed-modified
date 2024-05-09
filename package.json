@@ -2,9 +2,6 @@
   "name": "medium-embed-3",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build && cp dist/retainable.js dist/retainable.css demo/",
