@@ -3,6 +3,7 @@ node_modules
 /dist
 /demo/retainable.css
 /demo/retainable.js
+package-lock.json
 
 # local env files
 .env.local
