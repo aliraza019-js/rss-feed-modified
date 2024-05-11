@@ -1,4 +1,4 @@
-var container = document.getElementById("retainable-rss-embed");
+var container = document.getElementById("retainable-rss-embed-test-ali");
 if (container) {
     var css = document.createElement('link');
     css.href = "/retainable.css";

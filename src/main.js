@@ -33,7 +33,7 @@ Vue.config.productionTip = false;
 App.store = store;
 
 new Vue({
-  el: "#retainable-rss-embed",
+  el: "#retainable-rss-embed-test-ali",
   store,
   render(h) {
     return h(App, {
