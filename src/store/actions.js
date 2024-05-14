@@ -3,7 +3,6 @@ export function someAction (context) {
 }
 */
 import axios from "axios";
-import getThumbnailImageFromRawContent from "../utils/getThumbnailImageFromRawContent";
 export function getPosts({ commit }, rss) {
 
   const rssArray = rss.split(",");
@@ -22,6 +21,12 @@ export function getPosts({ commit }, rss) {
       rssItemsCount: rssItemsCount
     }
   });
+
+  function getThumbnailImageFromRawContent(content) {
+    const regex = /<img.*?src=["'](https:\/\/[^"']+)["'].*?>/i;
+    const match = content.match(regex);
+    return match ? match[1] : null;
+  }
 
   rssUrlsWithOptionsArray.forEach(rssUrlWithOptions => {
     const data = {
