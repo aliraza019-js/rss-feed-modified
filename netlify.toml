@@ -1,0 +1,8 @@
+[build]
+  publish = "public"  # The directory where your built files are located
+  command = "npm run build"  # The command to build your project
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
